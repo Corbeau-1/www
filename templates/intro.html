@@ -4,13 +4,28 @@
 {% block content %}
 <h1>Introduction to Longturn</h1>
 <hr>
-<h2>Quick description</h2>
 <p>
-I assume you know what <a href="http://freeciv.wikia.com">Freeciv</a>
-is. Longturn is a lot like a normal multiplayer game of Freeciv, except
-the turn timeout is 23 hours, and there are at least 20 human players
-(we never play with AI!). A typical game lasts about 100-160 turns.
-</p>
+Longturn is not so much a different variety of Civilization game as much as it is a different playstyle. Basically, the only official difference between LongTurn and any other game of Civilization is that <b>one game turn</b> lasts <b>one day</b>. So, not 30 seconds or 2 minutes or "whatever the players agree" but an exact amount of time that remains constant throughout the game. This means that the server is running constantly and all players connect to it during the day - when they get the time - make their moves and adjustments, and then log off to continue with their lives.
+<p>
+This, however, has drastic consequences for the flow of the game and the overall gaming experience.
+<p>
+  Firstly, when you wish to play a <b>standard</b> game of Civ with other people, one of the main obstacles is getting everybody together at the same time. If you are playing it on the internet, most of the time there will be someone ready to play, but not too many people at once. LongTurn games, on the other hand, have been known to gather many tens of players. Needless to say, a game with so many players offers unlimited possibilities when it comes to diplomacy, war, peace, alliances, cooperation and hostile behaviour.
+<p>
+This also makes a Longturn game a major social event and the closest a Civilization game can get to Massive Mutiplayer ;)
+<p>
+Secondly, another obstacle is finding the time to play. Even the shortest game of Civ requires a time investment and nobody can do it in breaks between other things. If you don't have at least half an hour of 100% concentrated attention at your disposal, it doesn't make sense even to start. LongTurn, on the other hand, can be played relatively casually and, if you can't spare a large block of time, it can be played in small chunks throughout the day. So, basically, if you are a working adult with a number of responsibilities, but you would still like to play a world leader in your favourite game, and do it with or against other people, this is the variant you want to play.
+<p>
+Thirdly, unlike the short and fast games usually played on FreeCiv servers arount the net, you have a lot of time at your disposal to think through your every move, investigate every line of research and analyse everything you weren't able to analyse if you were playing a fast game.
+<p>
+Fourthly, and for me this is the most important aspect of LongTurn, diplomacy is a blast. You can make alliances, negotiate detailed deals, squabble about individual tiles, twist arms, weasle out of agreements in a way you were never able to if you were playing fast multiplayer or just ordinary single-player games. And you have all the time in the world to negotiate, persuade and find the right words to do so. 
+<p>
+<hr>
+<h2>How to join</h2>
+<p>
+Longturn.net games are starting a few times per year in roughly regular intervals, although there is no rule. They are announced well ahead and registrations are usually open roughly a month ahead. To play a Longturn.net game you need to do three things:
+<p> 1. Install a Freeciv native client. This can be found at <href=http://freeciv.org>Freeciv.org</a>. Usually a game will be run on the newest version of server/client, but not always (for various reasons). Sometimes you may need to download and install an older version of the client. Older versions of Freeciv are also available on the Download page of Freeciv.org. Information about which Freeciv version is required for a particular LT game should be readily available on the game page (top right).
+<p> 2. Register at Longturn.net (this site).
+<p> 3. Sign up for the game when registrations are open <b>AND</b> confirm participation a few days before it actually starts. You need to do <b>BOTH</b> otherwise you will not be able to play the game. This is a measure to reduce the amount of idler as much as possible.
 <hr>
 <h2>History of Longturn</h2>
 <p>
@@ -58,39 +73,6 @@ In teamless (Free For All) games the key to victory is diplomacy. In
 order not to be left behind with technology, players need to quickly
 form alliances.
 </p>
-<hr>
-<h2>Joining the game</h2>
-<p>
-</p>
-First of all, read the <a href="{% url 'rules' %}">rules</a>. After that,
-create an account, sign on to a pregame and wait for it to start. Or join a 
-<tt>LTeX</tt> game, if one is currently being run. You can also go to the forum and 
-sign up at a substitution list to take over an idle account if any is 
-available. If you have any questions, ask on
-the <a href="http://forum.longturn.net">forum</a> or on
-<a href="http://en.wikipedia.org/wiki/IRC">IRC</a>: <tt>#longturn</tt> on <tt>irc.freenode.net</tt>.
-</p>
-<hr>
-<h2>Do I need to download anything to play?</h2>
-<p>Yes, you need a Freeciv client.</p>
-<p>If you use Windows you should
-get an installer from the <a href="http://freeciv.wikia.com/wiki/Main_Page">Freeciv main page</a>.</p>
-<p>
-If you use Linux/Mac you can use your package manager, or better
-yet <a href="http://freeciv.wikia.com/wiki/Svn">build from sources</a>.
-It seems a bug is fixed every week, so keeping up to date with
-the subversion repo is recommended. Installing is not required
-for starting the game, after the build is complete a shell
-script called <tt>civ</tt> is created - use it to start your
-client. If you intend to write custom patches to your client be
-sure to read the <a href="{% url 'rules' %}">rules</a>.
-</p>
-<hr>
-<h2>Which version of the game should I use?</h2>
-<p>The version is specified on each <a href="{% url 'game_list' %}">game page</a>.</p>
-<p>If you build your client from source be sure to use a
-<tt>S</tt> branch, not <tt>R</tt>. So for example, if a server
-runs version <tt>2.3</tt>, check out <tt>S2_3</tt>.</p>
 <hr>
 </ul>
 {% endblock %}
