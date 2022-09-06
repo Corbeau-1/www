@@ -8,8 +8,10 @@
             <li class="open">
         {% endif %}
         <a class="game menu" href="{% url 'game' g.name %}">{{ g.name }}</a>
-        {% if g.startin >= 0 %}
+        {% if g.startin >= 3 %}
             Start in {{ g.startin }} days, <a href="{% url 'game' g.name %}">join now!</a>
+        {% elif g.startin >=0 %}
+            Starting soon! <a href="{% url 'game' g.name %}">Join now!</a>
         {% elif g.port %}
             Running port {{ g.port }}
         {% else %}
